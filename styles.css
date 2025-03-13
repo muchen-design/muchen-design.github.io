@@ -1,0 +1,128 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* Header styles */
+.hero {
+    padding: 6rem 0;
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 2rem;
+    color: #555;
+    max-width: 800px;
+}
+
+/* Project section styles */
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin: 4rem 0;
+}
+
+.project {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.project-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.project:hover .project-image img {
+    transform: scale(1.03);
+}
+
+.project-content {
+    padding: 2.5rem;
+}
+
+.project h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: #222;
+}
+
+.project-tags {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 1.5rem;
+}
+
+.project-description {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 48px;
+    }
+    
+    h2 {
+        font-size: 28px;
+    }
+    
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
